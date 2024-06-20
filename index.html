@@ -134,25 +134,31 @@
             </div>
           </section>
 
-          <section id="contact">
-            <div class="container">
-              <h2>Send a message</h2><br>
-              <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="submit" value="Send">
-              </form>
-            </div>
-          </section>    
-          <script>
-            var hamburger = document.querySelector(".hamburger");
+          <div class="formcontainer">
+            <form action="" id="contactForm">
+                <div class="alert">Your message sent</div>
+        
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your name...." />
+                </div>
+        
+                <div class="inputBox">
+                    <input type="email" id="emailid" placeholder="Your Email....." />
+                </div>
+        
+                <div class="inputBox">
+                    <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+        
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mail.js"></script>
+        <script>
+          var hamburger = document.querySelector(".hamburger");
             hamburger.addEventListener("click", function(){
                 document.querySelector("body").classList.toggle("active");
             });
