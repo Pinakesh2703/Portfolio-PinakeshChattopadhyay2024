@@ -588,39 +588,35 @@ body.active .wrapper .section{
 }
 
 
-
-
-
-
-
-.formcontainer{
-  width: 90%;
-  height: 60vh;
+.formcontainer {
+  width: 40vw;
+  height: fit-content;
   padding: 20px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin-left: 20vw;
+  margin-top: 40px;
   flex-direction: column;
+  background-color: #444;
 }
 
-.container form{
-  width: 100%;
+.container form {
+  width: 100%; /* Adjusted width to increase the form size */
   height: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   flex-direction: column;
+  margin-left: 60vw; /* Adjusted to move the form left */
 }
 
-.inputBox{
+.inputBox {
   width: 100%;
   margin: 10px 0;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.inputBox input[type="text"], .inputBox input[type="email"]{
+.inputBox input[type="text"], .inputBox input[type="email"] {
   width: 100%;
   height: 50px;
   border-radius: 5px;
@@ -633,7 +629,7 @@ body.active .wrapper .section{
   color: #444;
 }
 
-.inputBox textarea{
+.inputBox textarea {
   width: 100%;
   height: 120px;
   border-radius: 5px;
@@ -646,7 +642,7 @@ body.active .wrapper .section{
   color: #444;
 }
 
-.inputBox button{
+.inputBox button {
   width: 100%;    
   padding: 10px 20px;
   border: none;
@@ -656,19 +652,18 @@ body.active .wrapper .section{
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  
 }
 
-.inputBox button:hover{
+.inputBox button:hover {
   background: rgb(0, 17, 255);
   transition: all 0.3s ease;
 }
 
-::placeholder{
+::placeholder {
   font-size: 16px;
 }
 
-.alert{
+.alert {
   width: 100%;
   background: rgb(0, 255, 106);
   padding: 10px 20px;
@@ -678,4 +673,3 @@ body.active .wrapper .section{
   font-weight: 900;
   display: none;
 }
-
