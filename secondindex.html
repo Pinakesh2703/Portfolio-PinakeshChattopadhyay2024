@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+          <!-- Profile Image & Text -->
+          <div class="profile">
+              <img src="PC.jpg">
+              <h3>Pinakesh Chattopadhyay</h3>
+              <p>MERN Stack Developer</p>
+          </div>
+          <!-- Menu Items -->
+          <ul>
+            <li>
+                <a href="index.html" >
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="thirdindex.html">
+                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                    <span class="item">skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="secondindex.html" class="active">
+                    <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                    <span class="item">Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="4index.html" >
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span class="item">Social</span>
+                </a>
+            </li>
+            
+        </ul>
+      </div>
+      <h1>PROJECTS</h1>
+  </header>
+
+  <main>
+    <section>
+      <div class="project-info">
+        <img src="cctv.png" alt="Project 1">
+        <div>
+          <h2>AI-Based Surveillance System</h2><br>
+          <p>A web-based application designed to enhance security by recording footage only when human activity is detected. Utilizes TensorFlow.js for real-time object detection and Next.js for a modern framework. Deployed on Vercel for scalability.</p>
+          <br><a href="https://github.com/Pinakesh2703/Survellience-Footage-Optimization" class="btn">View on Github</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="project-info">
+        <img src="note.jpg" alt="Project 2">
+        <div>
+          <h2>TaskFlow - Notes &amp; To-Do App</h2>
+          <p>A streamlined app for managing tasks and notes. Combines functionalities of a notes app and a to-do list. Developed using HTML, CSS, JavaScript, and Firebase Authentication.</p>
+          <br><a href="#" class="btn">View on Github</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="project-info">
+        <img src="weather.jpg" alt="Project 3">
+        <div>
+          <h2>ForecastFlow - Weather App</h2>
+          <p>An intuitive app for real-time weather updates. Utilizes OpenWeather API and Google Maps API. Developed with HTML, CSS, and JavaScript.</p>
+          <br><a href="#" class="btn">View on Github</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Social Media</title>
+  <link rel="stylesheet" href="4css.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+          <!-- Profile Image & Text -->
+          <div class="profile">
+              <img src="PC.jpg">
+              <h3>Pinakesh Chattopadhyay</h3>
+              <p>MERN Stack Developer</p>
+          </div>
+          <!-- Menu Items -->
+          <ul>
+              <li>
+                  <a href="index.html" >
+                      <span class="icon"><i class="fas fa-home"></i></span>
+                      <span class="item">Home</span>
+                  </a>
+              </li>
+              
+              <li>
+                  <a href="thirdindex.html">
+                      <span class="icon"><i class="fas fa-user-friends"></i></span>
+                      <span class="item">skills</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="secondindex.html">
+                      <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                      <span class="item">Projects</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="4index.html" class="active">
+                      <span class="icon"><i class="fas fa-database"></i></span>
+                      <span class="item">Social</span>
+                  </a>
+              </li>
+              
+          </ul>
+      </div>
+
+      
+  </div>
+    <h1>Connect Me</h1>
+  </header>
+
+  <main>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/pinakesh-vitb/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.instagram.com/pinakesh_chattopadhyay/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://github.com/Pinakesh2703" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.quora.com/profile/Pinakesh-Chattopadhyay" target="_blank" class="social-btn"><i class="fab fa-quora"></i> Quora</a>
+      <a href="https://twitter.com/Pinakesh2004" target="_blank" class="social-btn"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </main>
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

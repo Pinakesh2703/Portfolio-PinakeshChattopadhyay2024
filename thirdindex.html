@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Technologies</title>
+  <link rel="stylesheet" href="thirdcss.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Profile Image & Text -->
+            <div class="profile">
+                <img src="PC.jpg">
+                <h3>Pinakesh Chattopadhyay</h3>
+                <p>MERN Stack Developer</p>
+            </div>
+            <!-- Menu Items -->
+            <ul>
+              <li>
+                  <a href="index.html" >
+                      <span class="icon"><i class="fas fa-home"></i></span>
+                      <span class="item">Home</span>
+                  </a>
+              </li>
+             
+              <li>
+                  <a href="thirdindex.html" class="active">
+                      <span class="icon"><i class="fas fa-user-friends"></i></span>
+                      <span class="item">skills</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="secondindex.html">
+                      <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                      <span class="item">Projects</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="4index.html" >
+                      <span class="icon"><i class="fas fa-database"></i></span>
+                      <span class="item">Social</span>
+                  </a>
+              </li>
+              
+          </ul>
+        </div>
+    <h1>SKILLS</h1>
+  </header>
+
+  <main>
+    <section>
+      <div class="tech-info">
+        <img src="htmlimg.png" alt="HTML">
+        <div>
+          <h2>HTML</h2>
+          <p>HTML (Hypertext Markup Language) is the foundational markup language used to create and structure web pages. It provides a way to define the structure and semantics of content on the web, allowing browsers to render and display text, images, videos, links, and other multimedia. HTML uses tags and elements to create a hierarchical structure, enabling developers to organize and present information in a meaningful and accessible way. With the advent of HTML5, modern web applications have become more powerful and feature-rich, incorporating elements like canvas for graphics, video and audio playback, and offline capabilities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tech-info">
+        <img src="cssimg.png" alt="CSS">
+        <div>
+          <h2>CSS</h2>
+          <p>CSS (Cascading Style Sheets) is a style sheet language that controls the presentation and visual appearance of web pages. It works in tandem with HTML to separate content from styling, enabling developers to create visually appealing and consistent designs across multiple web pages. CSS allows for precise control over layout, typography, colors, backgrounds, and various other visual aspects of a website. It supports advanced features like responsive design, animations, and transitions, making it an essential tool for creating modern and engaging user interfaces. CSS also promotes maintainability and reusability of styles, making it easier to update and manage the look and feel of a website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tech-info">
+        <img src="jsimg.png" alt="JavaScript">
+        <div>
+          <h2>JavaScript</h2>
+          <p>JavaScript is a versatile programming language that adds interactivity, dynamism, and behavior to web pages. Originally designed for client-side scripting in web browsers, it has evolved into a powerful language that can also be used on the server-side with technologies like Node.js. JavaScript enables developers to manipulate the Document Object Model (DOM), handle user events, create animations and effects, and build complex web applications. It supports various programming paradigms, including object-oriented, functional, and event-driven programming. With the rise of modern JavaScript frameworks and libraries like React, Angular, and Vue.js, developers can build sophisticated and scalable web applications more efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tech-info">
+        <img src="reactimg.png" alt="React">
+        <div>
+          <h2>React</h2>
+          <p>React is a popular JavaScript library developed and maintained by Facebook for building user interfaces (UIs). It introduces a component-based architecture, where reusable UI components are created and composed to build complex applications. React's core strength lies in its efficient rendering through the Virtual DOM, which optimizes updates and improves performance. Additionally, React's use of a declarative programming approach and its focus on functional components make it easier to reason about and maintain code. With a vast ecosystem of third-party libraries and tools, React enables developers to create highly interactive and responsive web applications, single-page applications (SPAs), and even mobile applications using React Native.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tech-info">
+        <img src="nodeimg.png" alt="Node.js">
+        <div>
+          <h2>Node.js</h2>
+          <p>Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser. It is built on Chrome's V8 JavaScript engine and utilizes an event-driven, non-blocking I/O model, making it highly efficient and suitable for building scalable network applications. Node.js is widely used for creating server-side applications, APIs, real-time applications (like chat applications and online games), and tools for automation and scripting. With its extensive ecosystem of packages (npm), Node.js provides a rich set of libraries and frameworks for various purposes, such as web development (Express.js), data streaming, file system operations, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tech-info">
+        <img src="sqlimg.png" alt="MySQL">
+        <div>
+          <h2>MySQL</h2>
+          <p>MySQL is an open-source relational database management system (RDBMS) used for storing, managing, and retrieving data in a structured and organized manner. It is based on the SQL (Structured Query Language) standard, which provides a powerful and flexible way to interact with databases. MySQL is widely adopted in web applications, content management systems, and other data-driven applications due to its reliability, performance, and ease of use. It supports features like transactions, triggers, views, and stored procedures, enabling developers to build robust and scalable data-driven applications. MySQL also offers various storage engines, replication, and clustering capabilities, making it suitable for both small-scale and large-scale projects.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

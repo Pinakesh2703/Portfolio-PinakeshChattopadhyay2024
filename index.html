@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Pinakesh's Portfolio</title>
+  <link rel="stylesheet" href="1css.css.css">
+</head>
+
+<body style="background-color: white">
+  
+  <header>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+          <!-- Profile Image & Text -->
+          <div class="profile">
+              <img src="PC.jpg">
+              <h3>Pinakesh Chattopadhyay</h3>
+              <p>MERN Stack Developer</p>
+          </div>
+          <!-- Menu Items -->
+          <ul>
+              <li>
+                  <a href="index.html" class="active">
+                      <span class="icon"><i class="fas fa-home"></i></span>
+                      <span class="item">Home</span>
+                  </a>
+              </li>
+             
+              <li>
+                  <a href="thirdindex.html">
+                      <span class="icon"><i class="fas fa-user-friends"></i></span>
+                      <span class="item">skills</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="secondindex.html">
+                      <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                      <span class="item">Projects</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="4index.html">
+                      <span class="icon"><i class="fas fa-database"></i></span>
+                      <span class="item">Social</span>
+                  </a>
+              </li>
+              
+          </ul>
+      </div>
+
+      
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+    
+  </header>
+          <section id="about">
+            <div class="container-1">
+              <div class="info">
+                  <h2 style="font-size: xx-large;">&emsp;PINAKESH CHATTOPADHYAY</h2>
+                  <p class="para">I'm Pinakesh Chattopadhyay, a sophomore at VIT University. My skills include Python, CSS, Javascript, React and Node.js have experience in collaborating with others on coding projects.</p>
+              </div>
+              <div class="image">
+                  <img src="Pinakesh.jpg">
+              </div>
+          </div>
+          </section>
+
+          <section id="education">
+            <div class="container">
+              <h2>EDUCATION</h2>
+    
+              <ul>
+                <li>
+                  <h3>Vellore Institute of Technology (VIT Bhopal University)&emsp;&emsp;&emsp;&emsp;&emsp;[2022-2026]</h3>
+                  <p>Bachelor of Technology: Computer Science and Engineering</p>
+                  <p>CGPA:</p>
+                </li>
+                <li>
+                  <br>
+                  <h3>D.A.V. Model School, IIT Kharagpur&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[2009-2022]</h3><br>
+                  <p>High School : Mathematics and Computer Science</p>
+                  <p>Grade: A</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="skills">
+                  <div class="container">
+                  <h2>SKILLS</h2>
+                  <section>
+                    <div class="image-row">
+                      <img src="htmlimg.png" alt="Image 1">
+                      <img src="jsimg.png" alt="Image 2">
+                      <img src="nodeimg.png" alt="Image 3">
+                      <img src="reactimg.png" alt="Image 4">
+                      <img src="sqlimg.png" alt="Image 5">
+                  </div>
+                  </section>
+                </div>
+              </section>
+
+          <section id="projects">
+            <div class="container">
+              <h2>PROJECTS</h2>
+              <ul>
+                <li>
+                  <br>
+                  <h3>AI Based survilence System using Tensorflow.js and Next.js</h3>
+                  <br>
+                  <p>The Intelligent Surveillance System is a web-based application designed to enhance security by recording surveillance footage only when human activity is detected. Leveraging TensorFlow.js for real-time object detection and Next.js for a modern web framework, this project ensures efficient monitoring and storage management. The application is deployed on Vercel, providing a scalable and easily accessible solution</p>
+                </li>
+                <li>
+                  <br><br>
+                  <h3>Tourism (Database) Management system with Python and MySql</h3><br>
+                  <p>This tourism management system has been created to help the tour organisers to manage the data of their clients and different services they provide, This has been made using Python programming language and MySQL database. In this system 5 different types of records can be stored i.e. Drivers, Vehicles, Tour Packages provided, Bookings and Transactions.</p>
+                </li>
+                <li>
+                  <br><br>
+                  <h3>Live Weather App</h3><br>
+                  <p>Live Weather App that brings real-time weather information right at your fingertips! Powered by API technology and developed using python & tkinter, this application provides users with accurate and up-to-date weather forecasts, ensuring they stay informed and prepared for any weather condition.</p>
+                </li>
+                
+              </ul>
+            </div>
+          </section>
+
+          <section id="contact">
+            <div class="container">
+              <h2>Send a message</h2><br>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </section>    
+          <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function(){
+                document.querySelector("body").classList.toggle("active");
+            });
+        </script>
+
+</body>
+
+</html>
