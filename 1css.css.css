@@ -673,3 +673,46 @@ body.active .wrapper .section{
   font-weight: 900;
   display: none;
 }
+
+
+.table-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px 15px;
+}
+th {
+  background-color: #009879;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+caption {
+  caption-side: top;
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+}
